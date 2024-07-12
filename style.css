@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    font-family: "Poppins";
+    /*Retirando a configuração padrão dos navegadores */
+    /* * = Siginifica que ele vai aplicar o estilo para tudo e sempre tem que está na primeira linha */
+    margin: 0;
+    /* espaçamento externo*/
+    padding: 0;
+    /*espaçamento interno*/
+    box-sizing: border-box;
+}
+html{
+    scroll-snap-type: y mandatory;
+}
+video, .img-tesla {
+    width: 100%;
+    /* Largura */
+    height: 100%;
+    /* Altura */
+    position: absolute;
+    /* Pocionar o item em uma posição exata, que eu desejar!*/
+    top: 0;
+    /*declaração de posicionamento*/
+    left: 0;
+    /*declaração de pocionamento*/
+    z-index: -1;
+    /* Define quem vai ficar na frente de quem -1 ele fica atras de todo mundo o padrão é 1 para todos*/
+    object-fit: cover;
+    /*Como eu quero que meu video se encaixe na tela/cover vai cobrir a tela inteira*/
+    filter: brightness(60%); /* Escurece um pouco o video*/
+}
+
+.logo {
+    filter: brightness(100);
+    /*filtro cor de fundo*/
+    position: fixed;
+    /* Ele fica fixo na tela, e deixa o fundo ir vai pra tela toda*/
+    width: 120px;
+    /* Diminuiu o tamanho da imagem */
+}
+.item{
+    display: flex; /*Habilita algumas propriedades CSS*/
+
+    justify-content: space-between;/*Define como os itens vão se distanciar um do outro*/
+    flex-direction: column; /*organiza a direção dos itens/ colum = em coluna*/
+
+    position:relative; /*posição na tela*/
+    width: 100vw; /*ocupa tela toda em altura*/
+    height: 100vh; /*ocupa a tela toda em largura*/
+    scroll-snap-align: start;
+                                   
+}
+
+h1{
+    color: white; /*Cor de texto*/
+    font-size: 50px; /*Aumentar o tamanho do texto*/
+}
+.sub-titulo{
+    color: white;
+}
+.info-carro{
+    margin-top: 80px; /*espaço da margem sentido vertical*/
+    text-align: center; /*Deixa o texto no cenrto da pagina*/
+}
+.rodape{
+    text-align: center; /*Deixa o texto no cenrto da pagina*/
+}
+button{
+    background-color: rgba(34, 34, 34, 0.8); /*0.8 é a transparencia da cor*/
+    color: white;
+    padding: 7px 80px; /*tamanho do botão*/
+    border-radius: 5px; /*Deixar o borda do botão arredondada*/
+    border: none; /*Borda none = sem borda*/
+    /*opacity: 0.8; /*transparencia do item*/
+    cursor: pointer; /*coloca a mãozinha no lugar do mouse*/
+}
+.teste-drive{
+    color: black;
+    background-color: white; /*cor de fundo*/
+}
+.texto-rodape{
+    color: white;
+    font-size: 12px; /*tamanho da fonte*/
+    margin-top: 10px; /*Distanciamento da margem pra cima*/
+}
+.img3{
+    color:  rgba(34, 34, 34, 0.8);
+}
+
+.formulario {
+    position: fixed;
+    top: 40px;
+    width: 600px;
+    height: 100%;
+    z-index: 3;
+    left: -50%;
+    transition: 1.5s;
+    
+}

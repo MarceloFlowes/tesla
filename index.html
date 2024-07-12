@@ -1,0 +1,63 @@
+<!DOCTYPE html> <!--Versão do HTML-->
+<html lang="pt-br"> <!--TAG HTML e Lingua do Site-->
+
+<head> <!--Configuração do site-->
+    <meta charset="UTF-8"> <!--PADRÃO DE CARACTERE DO SITE-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SITE COMPATIVEL COM CELULAR E COMPUTADOR-->
+    <link rel="stylesheet" href="style.css"> <!--IMPORTANDO MEU CSS / 
+            CSS = CASCADING STYLE SHEET = FOLHA DE ESTILO CASCATA-->
+    <title>Dev Club Tesla</title> <!-- TITULO DO SITE-->
+</head>
+
+<ul> <!--Uma lista-->
+    <li> <!-- Itens da lista -->
+
+    </li>
+</ul>
+
+<body> <!-- CORPO DO SITE -->
+    <img src="./img/logo.png" alt="logo da Tesla" class="logo">
+    <ul>
+        <li class="item"> <!--Div = Separa em blocos e esse é o todos os itens do site -->
+            <video src="./media/model-y.mp4" autoplay loop muted> </video>
+
+            <div class="info-carro"><!--Div = Separa em blocos e esse é o info-carro -->
+                <h1>Model Y</h1> <!--TITULO-->
+                <p class="sub-titulo">Parcelas a partir de 499 dólares</p> <!--PARAGRAFO-->
+            </div>
+
+            <div class="rodape"> <!--Div = Separa em blocos e esse é o rodape -->
+                <button onclick="aparecerFormulacio()">Comprar Agora</button> <!-- BOTÃO -->
+                <button class="teste-drive">Faça Um Teste Drive</button>
+                <p class="texto-rodape">Não garantimos seu veiculo imediatamente. Consultar estoque!</p>
+            </div>
+
+        </li>
+        <!-- ITEM 2 -->
+        <li class="item">
+            <img src="./img/model-3.png" class="img-tesla" alt="imagem model 3">
+
+            <div class="info-carro"><!--Div = Separa em blocos e esse é o info-carro -->
+                <h1>Model 3</h1> <!--TITULO-->
+                <p class="sub-titulo">Parcelas a partir de 499 dólares</p> <!--PARAGRAFO-->
+            </div>
+        </li>
+        <!--  ITEM 3    -->
+        <li class="item">
+            <img src="./img/model-x.png" class="img-tesla" alt="imagem model-x">
+
+            <div class="info-carro"><!--Div = Separa em blocos e esse é o info-carro -->
+                <h1 class="img3">Model X</h1> <!--TITULO-->
+                <p class="img3">Parcelas a partir de 499 dólares</p> <!--PARAGRAFO-->
+            </div>
+        </li>
+    </ul>
+    <div class="formulario">
+        <button onclick="desaparecerFormulario()">X</button>
+        <script type="text/javascript" src="https://form.jotform.com/jsform/241936207087662"></script>
+    </div>
+</body<>
+<script src="./script.js"></script>
+
+</html>
